@@ -1,0 +1,165 @@
+
+.tableHeadContainer{
+    display: flex;
+}
+
+.tableHeader{
+    background: #EBEBEE;
+    width: 100%;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+}
+.leftsidetableheader{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+h3{
+    margin: 0;
+}
+.searchBox{
+    background: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.searchBox img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.searchicontext{
+    font-family: 'Poppins';
+    font-size: small;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.addItemButton{
+    width: fit-content;
+    padding: 10px;
+    
+}
+.addItemButton img{
+    width: 20px;
+    background: #7B1FA2;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+}
+
+.addItemButton img:hover{
+    width: 20px;
+    background: #8e25bb;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 25%);
+}
+
+.searchBox .inputsearch{
+    /* border: 0px solid; */
+    position: absolute;
+    background: transparent;
+    padding:0px;
+    margin: 0px;
+}
+
+.searchBox .inputsearch input{
+    background: transparent;
+    margin-left: 22px;
+    border: 0px;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+    font-size: 14px;
+    font-family:'Poppins';
+}
+.searchBox .inputsearch input:focus{
+    background: transparent;
+    margin-left: 22px;
+    border: 0px;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+@media only screen and (max-width: 900px) {
+    .searchBox {
+        width: 30vw;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .searchBox {
+        width: 20vw;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .searchBox {
+        width: 15vw;
+    }
+}
+
+
+ /* table body part  */
+
+ /* space adjesting div  */
+ 
+ .tableBodyPart{
+    border: 0.2px solid rgba(0, 0, 0, 0.158);
+    border-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    overflow: scroll;
+ }
+.tableData .tablecont{
+    padding: 10px;
+}
+.tableimgdata{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height:20px;
+}
+ .tableimgdata img{
+    border: 1px solid rgba(17, 15, 15, 0.26);
+    border-radius: 10px;
+    background: #fff;
+    padding: 3px;
+    width: 20px;
+ }
+ .tabletextdata{
+    padding: 0;
+    margin: 0;
+    height:20px;
+ }
+ .tabletextdata p{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: small;
+ }
+ .tablelabel{
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.171);
+ }
+ .tablelabel p{
+    color: #666;
+    font-size: small;
+ }
+ .tablelabelbottomline{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* border: 1px solid; */
+ }
+ .tablelabelbottomline .labellineinnerspace{
+    position: absolute;
+    height: 40px;
+    border: 1px solid;
+ }
+ .tableColumn{
+    flex: 1;
+ }

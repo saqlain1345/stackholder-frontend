@@ -1,0 +1,111 @@
+
+.topbar{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    background: #fff;
+  }
+  .topleft{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  .topright{
+    display: flex;
+    flex-grow: 99;
+    justify-content: end;
+  }
+  .logo{
+    display:flex;
+    align-items: center;
+    margin: 0 12px;
+  }
+  .logo h3{
+    margin: 0;
+  }
+  
+  .logo img{
+    width:25px;
+    height: 25px;
+    margin-right: 3px;
+  }
+  
+  .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+
+  .navimg{
+    transition: background 0.5s;
+  }
+  .navimg:hover{
+    background: #5E35B2;
+    content:url("/src/asset/img/navwhite.png");
+  }
+
+  .notimg{
+    transition: background 0.5s;
+  }
+
+  .notimg:hover{
+    background: #5E35B2;
+    content:url("/src/asset/img/bellwhite.png");
+  }
+
+  .setimg{
+    content:url("/src/asset/img/settings.png");
+    transition: content 0.5s;
+  }
+
+  .profile:hover > .setimg{
+    content:url("/src/asset/img/settingwhite.png");
+  }
+  
+  .nav img{
+    width:20px;
+    background: #eee7f6;
+    padding: 7px;
+    border-radius: 14px;
+  }
+  
+  .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E3F2FD;
+    border-radius: 14px;
+    height: fit-content;
+    padding: 6px;
+    margin: 0 20px 0 0;
+    transition: background 0.5s;
+  }
+  
+  .profile:hover{
+    background: #509EF4;
+  }
+  
+  .profile img{
+    width: 20px;
+    height: 20px;
+    padding: 0 2px;
+  }
+  
+  .profileimg{
+    display: flex;
+    align-items: center;
+  }
+  
+  .profileimg img{
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+  }
+  
+  @media only screen and (max-width: 900px){
+    .logo{
+      display: none;
+    }
+  }
+  
