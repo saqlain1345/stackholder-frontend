@@ -46,7 +46,7 @@ const AddClient = () => {
 
         <TextField id="outlined-basic" label="Name" variant="outlined" fullWidth size='small' margin="normal" required name="name" onChange={handleChange}/>
         <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth size='small' margin="normal" required name="email" onChange={handleChange}/>
-        <TextField id="outlined-basic" label="Phone" variant="outlined" fullWidth size='small' margin="normal" required name="phone" onChange={handleChange}/>
+        <TextField id="outlined-basic" label="Phone" variant="outlined" fullWidth size='small' margin="normal" required name="contact" onChange={handleChange}/>
         <TextField id="outlined-basic" label="Address" variant="outlined" fullWidth size='small' margin="normal" required multiline rows={2} name="address" onChange={handleChange}/>
         <FormControlLabel control={<Switch defaultChecked name="status" onChange={handleSwitchChange}/>} label="Status"/><br />
         <ColorButton variant="contained" fullWidth onClick={handleSubmit}>Add Client</ColorButton>
