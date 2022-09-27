@@ -1,6 +1,7 @@
 import React from 'react'
-import './CustomDataTable.css'
-import TableHeader from './TableHeader'
+import CustomDataTablePagination from './CustomDataTablePagination';
+import CustomTableBody from './CustomTableBody';
+import TableHeader from './CustomTableHeader'
 
 const CustomDataTable = ({title, addButton, data}) => {
 
@@ -10,48 +11,10 @@ const CustomDataTable = ({title, addButton, data}) => {
     return (
         <>
             <TableHeader title={title} addButton={addButton}/>
-            <div className='tableBodyPart'>
-                {/* <div className="tableColumn">
-                    <div className="tableData">
-                        <div className='tablecont tabletextdata tablelabel'>
-                            <p>images</p>
-                        </div>
-                        {
-                        Array.from({length: 10}, (_, i) => (
-                            <div className='tablecont tableimgdata'>
-                                <img src="/img/olx.png"/>
-                            </div>
-                        ))
-                    } </div>
-                </div> */}
-                {
-                data?.header?.map((header, index) => (
+            
+            <CustomTableBody data={data}/>
 
-                    <div className="tableColumn">
-                        <div className="tableData">
-                            <div className='tablecont tabletextdata tablelabel'>
-                                <p>{header.title}</p>
-                            </div>
-                            {
-                                
-                                data?.body?.map((item, i) => (
-                                    header.type === "image"  ?
-                                            <div className='tablecont tableimgdata'>
-                                                <img src={item[header.title]}/>
-                                            </div>
-                                        : 
-                                            <div className='tablecont tabletextdata'>
-                                                <p>{item[header.title]}</p>
-                                            </div>
-                                        
-                                ))
-                                
-                                
-                            } 
-                        </div>
-                    </div>
-                ))
-            } </div>
+            <CustomDataTablePagination />
         </>
     )
 }

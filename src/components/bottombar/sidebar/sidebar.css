@@ -15,24 +15,24 @@
 
 
    /* width */
-::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
     width: 0px;
     background: #ffffff00;
     border-radius: 50px;
   }
   
   /* Track */
-  ::-webkit-scrollbar-track {
+  .sidebar::-webkit-scrollbar-track {
     background: #ffffff00; 
     border-radius: 50px;
   }
    
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+  .sidebar::-webkit-scrollbar-thumb {
     background: rgba(136, 136, 136, 0.096); 
   }
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+  .sidebar::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }

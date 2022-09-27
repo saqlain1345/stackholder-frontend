@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import './CustomDataTable.css'
+import './CustomTableHeader.css'
+import CustomSearchBox from '../CustomSearchBox/CustomSearchBox'
 
 const TableHeader = ({title, addButton}) => {
     return (
@@ -15,13 +16,8 @@ const TableHeader = ({title, addButton}) => {
                                 marginRight: "20px"
                             }
                     }>{title}</h3>
-                    <div className='searchBox'>
-                        <img src='/img/search.png'/>
-                        <p className='searchicontext'></p>
-                        <div className='inputsearch'>
-                            <input type="text" placeholder='Search'/>
-                        </div>
-                    </div>
+                    
+                    <CustomSearchBox />
                 </div>
                 <NavLink to={addButton}>
                     <div className='rightsidetableheader'>
