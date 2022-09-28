@@ -105,3 +105,12 @@
   .search_custom_textField textarea:focus {
     margin-right: 20px;
   } 
+
+  @media only screen and (max-width: 380px){
+      .search_custom_focusp{
+          display: none;
+      }
+      .search_custom_nonfocusp{
+        display: none;
+      }
+  }
